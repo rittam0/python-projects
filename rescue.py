@@ -1,5 +1,8 @@
-target_word="vellore"
-first_letter=target_word[0]
-last_letter=target_word[-1]
-print("The first letter is:", first_letter)
-print("The last letter is:", last_letter)
+word_a= "listen"
+word_b="silent"
+lower_a=word_a.lower()
+lower_b=word_b.lower()
+sorted_a=sorted(lower_a)
+sorted_b=sorted(lower_b)
+is_anagram= (sorted_a==sorted_b)
+print(f"are they anagrams?: {is_anagram}")
