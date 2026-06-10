@@ -1,8 +1,8 @@
-word_a= "listen"
-word_b="silent"
-lower_a=word_a.lower()
-lower_b=word_b.lower()
-sorted_a=sorted(lower_a)
-sorted_b=sorted(lower_b)
-is_anagram= (sorted_a==sorted_b)
-print(f"are they anagrams?: {is_anagram}")
+word="Racecar"
+clean= word.lower()
+print(clean)
+
+reverse_word= clean[::-1]
+print(reverse_word)
+is_match= (clean==reverse_word)
+print("is it a pallindrome", is_match)
