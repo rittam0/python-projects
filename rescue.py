@@ -1,9 +1,7 @@
-word_list= ["Racecar", "Vellore", "Madam"]
-valid_palindromes=[]
-for current_word in word_list:
-    clean= current_word.lower()
-    reverse_word= clean[::-1]
-    is_match= (clean==reverse_word)
-    if is_match:
-        valid_palindromes.append(current_word)
-print(f"Valid palindromes found: {valid_palindromes}")
+nums= [2,7,11,15]
+target=9
+for  i in range(len(nums)):
+    for j in range(i+1,len(nums)):
+        if nums[i]+nums[j]==target:
+            print(f"match found at index {i} and index {j}")
+            print(f"the numbers are {nums[i]}+{nums[j]}={target}")
